@@ -1,0 +1,183 @@
+.boton-avatar2{
+    position: absolute;
+    left: 10px;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.boton-avatar{
+    position: absolute;
+    left: 10px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.textos-header{
+    padding: 10px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.contenedor{
+    padding: 5px 0;
+    width: 90%;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo-skilss{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.titulo1{
+    text-align: center;
+    color: gold;
+}
+p{
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+th{
+    color: white;
+}
+td{
+    color: white;
+}
+li{
+    color: white;
+}
+:link{
+    color: goldenrod;
+}
+:visited{
+    color: goldenrod;
+}
+a:hover{
+    background-color:red;
+    color: black
+}
+body{
+    background-color: black;
+}
+nav{
+    text-align:right;
+    padding: 5px 30px 0px 980px;
+    display: flex;
+}
+nav > a{
+    color: goldenrod;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.skills{
+color: white;
+width: 100vh;
+height: 100vh;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.barra{
+    width: 350px;
+    height: 20px;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    box-shadow: 20px 25px 45px rgb(88, 88, 88);
+    border-right: 3px solid rgba(225, 225, 225, 0.1);
+    border-bottom: 3px solid rgba(225, 225, 225, 0.1);
+}
+h2{
+    text-align: center;
+}
+.progreso{
+    width: var(--w);
+    height: 100%;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    animation: Aumentar 7s ease;
+}
+@keyframes Aumentar{
+    0%{width: 0%;}
+    100%{width: var(--w)}
+}
+.perfil{
+    display: flex;
+
+}
+.imgperfil{
+    border-radius: 50px;
+   width: 100px;
+   height: 100px;
+   cursor: pointer;
+}
+.txtperfil{
+    margin-left: 10px;
+    color: white;
+    font-family: Arial;
+    
+    
+}
+.boton{
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 1px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.boton:hover{
+    background-color: white;
+    color: black;
+}
+.acercade{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.imgjesus{
+    width: 500px;
+    height: 500px;
+   
+}
+.acerca{
+    text-align: right;
+}
+.botoninfo{
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 1px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.botoninfo:hover{
+    background-color: white;
+    color: black;
+}
