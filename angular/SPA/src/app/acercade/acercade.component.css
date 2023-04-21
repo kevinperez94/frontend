@@ -1,0 +1,58 @@
+.caja-padre{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: serif;
+}
+
+.titulo2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: serif;
+}
+
+.editar{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.botoninfo{
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: whitesmoke;
+    background-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: monospace;
+    font-size: medium;
+}
+
+.botoninfo:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+p {
+    font-family: Arial;
+    text-align: center;
+}
+
+.acercade{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.imgkevin{
+    border-radius: 250px;
+    width: 17%;
+    height: 15%;
+}

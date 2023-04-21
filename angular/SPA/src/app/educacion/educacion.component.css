@@ -1,0 +1,42 @@
+.caja-padre{
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: serif;
+}
+
+.acerca{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.botoninfo{
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: whitesmoke;
+    border-width: 2px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: monospace;
+    font-size: medium;
+}
+
+.botoninfo:hover{
+    background-color: white;
+    color: black;
+}
+
+p{
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}

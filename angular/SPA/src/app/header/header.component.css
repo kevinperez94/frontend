@@ -1,0 +1,60 @@
+header{
+    clear: both;
+    content: "";
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 120px;
+    float: left
+}
+
+nav {
+    float: right;
+    padding: 5px 15px;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: medium;
+}
+
+nav>a {
+    list-style: none;
+    color: goldenrod;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 12px 0;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+.login{
+    color: black;
+    border-radius: 11px;
+    width: 77px;
+    height: 25px;
+    font-weight: bold;
+    border-color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.login:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*--- para la vista del celulares ---*/
+@media (max-width:575px){
+    .caja-padre{
+        flex-direction: column;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
