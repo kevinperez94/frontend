@@ -1,26 +1,31 @@
 <div class="caja-padre">
     <h2 class="titulo"><u>Educacion</u></h2>
-    <div class="acerca">
-        <button class="botoninfo" onclick="cambiar_educacion()">
-            <b>editar info</b>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
         </button>
     </div>
-    <div class="educacion">
-        <ul>
-            <li>
-                <p><i>cursando en "#ArgentinaPrograma".</i></p>
-            </li>
-        </ul>
-        <br>
-        <ul>
-            <li>
-                <p><i>Bachiller en Ciencias Sociales en E.E.S.N 66, La Matanza, año 2021.</i></p>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <input id="edit-educacion" type="text" oninput="myFunctionedu(this.value)" style="display:none"
-            class="botoninfo">
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 

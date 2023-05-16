@@ -31,7 +31,7 @@ nav>a:hover {
     text-decoration: underline;
 }
 
-.login{
+.logincss{
     color: black;
     border-radius: 11px;
     width: 77px;
@@ -42,7 +42,24 @@ nav>a:hover {
     margin-left: 25px;
 }
 
-.login:hover{
+.logincss:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.outcss{
+    color: black;
+    border-radius: 11px;
+    width: 77px;
+    height: 25px;
+    font-weight: bold;
+    border-color: white;
+    text-decoration: none;
+    text-align:center;
+    margin-left: 25px;
+}
+
+.outcss:hover{
     background-color: black;
     color: whitesmoke;
 }

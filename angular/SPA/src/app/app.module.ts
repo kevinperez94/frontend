@@ -11,6 +11,13 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './educacion/neweducacion.component';
+import { EditeducacionComponent } from './educacion/editeducacion.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +29,21 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillsComponent,
     ProyectosComponent,
     IniciarSesionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

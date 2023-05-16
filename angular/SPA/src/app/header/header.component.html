@@ -10,7 +10,8 @@
             <a href="mailto:kevinperez94@outlook.com.ar">Contacto</a>
             <a href="https://www.instagram.com/kevinperez.94/" target="_blank">Instagram</a>
             <a href="https://www.twitter.com/kevinperezz94" target="_blank">Twitter</a>
-            <button type="button" class="login">Ingresar</button>
+            <button type="button" class="logincss" (click)="ingresar()"  *ngIf="!isLogged">Ingresar</button>
+            <button type="button" class="outcss" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
         </nav>
 
 

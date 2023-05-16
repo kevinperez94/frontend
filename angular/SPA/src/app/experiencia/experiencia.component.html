@@ -1,43 +1,32 @@
 <div class="caja-padre">
     <h2 class="titulo" id="XP"><u>Experiencia Laboral</u></h2>
-    <div class="acerca">
-        <button class="botoninfo" onclick="cambiar_experiencia()">
-            <b>editar info</b>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
         </button>
     </div>
-    <div class="experiencia">
-        <ul>
-            <li>
-                <h2><u>Trabajo 1</u></h2>
-                <h3> - (Años)</h3>
-            </li>
-            <p id="text-experiencia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non odio magnam quo
-                labore voluptas dicta neque iusto cum iure provident.</p>
-        </ul>
-        <br>
-        <ul>
-            <li>
-                <h2><u>Trabajo 2</u></h2>
-                <h3> - (Años)</h3>
-            </li>
-            <p id="text-experiencia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non odio magnam quo
-                labore voluptas dicta neque iusto cum iure provident.</p>
-        </ul>
-        <br>
-        <ul>
-            <li>
-                <h2><u>Trabajo 3</u></h2>
-                <h3> - (Años)</h3>
-            </li>
-            <p id="text-experiencia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non odio magnam quo
-                labore voluptas dicta neque iusto cum iure provident.</p>
-        </ul>
-        <br>
 
-    </div>
-    <div>
-        <input id="edit-experiencia" type="text" oninput="myFunctionexp(this.value)" style="display:none"
-            class="botoninfo">
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 <hr color="white">
